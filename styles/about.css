@@ -13,6 +13,10 @@
 html{
     width: 100%
 }
+a {
+     text-decoration: none;
+     color: #fff;
+ }
 /* Mobile View */
 @media (max-width: 599px){
     .scrolling-nav {
@@ -21,22 +25,33 @@ html{
         align-items: center;
         width: 100%;
         background-color: var(--color-1);
-        padding: 20px;
+        padding: 25px;
+    }
+    .about {
+        text-transform: lowercase;
+        background-color: var(--color-2);
+        padding: 5px;
+        margin-right: 3px;
+        font-size: 8px;
+        border-radius: 2rem;
+    }
+
+    .about:hover {
+        color: var(--color-1);
     }
     h1{
         font-family: 'Poppins', sans-serif;
-        font-size: 25px;
+        font-size: 10px;
         font-weight: bold;
         color: var(--color-4);
         text-transform: uppercase;
     }
     h1:hover{
         cursor: pointer;
-        opacity: .9;
     }
     h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         color: var(--color-3);
         text-align: left;
         text-transform: capitalize;
@@ -49,7 +64,7 @@ html{
     button {
         outline: none;
         border: none;
-        font-size: .8rem;
+        font-size: 8px;
         font-weight: bold;
         padding: 5px;
         border-radius: 0.3rem;
@@ -98,9 +113,30 @@ html{
         font-family: 'Poppins', sans-serif;
         text-align: center;
         color: var(--color-4);
-        font-size: 16px;
+        font-size: 10px;
         padding-bottom: 8px;
     }
+  .fab {
+      color: var(--color-4);
+      padding: 8px;
+      font-size: 12px;
+  }
+
+  .fa-facebook:hover {
+      color: var(--color-1);
+  }
+
+  .fa-twitter:hover {
+      color: var(--color-1);
+  }
+
+  .fa-github:hover {
+      color: var(--color-3);
+  }
+
+  a {
+      text-decoration: none;
+  }
     #scrollToTop {
         display: none;
         position: fixed;
@@ -118,4 +154,153 @@ html{
     #scrollToTop:hover {
         background-color: #555;
     }
+}
+
+/* Desktop View */
+@media (min-width: 600px){
+    .scrolling-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: var(--color-1);
+        padding: 30px;
+    }
+    .about {
+        text-transform: lowercase;
+        background-color: var(--color-2);
+        padding: 10px;
+        margin-right: 8px;
+        border-radius: 2rem;
+        font-size: 8px;
+    }
+    .about:hover {
+        color: var(--color-1);
+    }
+  h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--color-4);
+      text-transform: uppercase;
+  }
+
+  h1:hover {
+      cursor: pointer;
+  }
+
+  h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      color: var(--color-3);
+      text-align: left;
+      text-transform: capitalize;
+  }
+
+  p {
+      font-size: 12px;
+      color: var(--color-3);
+      text-align: justify;
+  }
+
+  button {
+      outline: none;
+      border: none;
+      font-size: .8rem;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 0.3rem;
+      color: var(--color-1);
+      text-transform: capitalize;
+  }
+
+  button:hover {
+      cursor: pointer;
+      opacity: 0.7;
+      transition: all 0.5s ease-in-out;
+  }
+
+  main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+      padding: 20px 15px 0 15px;
+      margin-bottom: 20px;
+  }
+
+  .callToAction {
+      color: var(--color-1);
+  }
+
+  .roi {
+      color: red;
+      text-transform: uppercase;
+      font-family: 'Sofia', cursive;
+      padding-left: 3px;
+      padding-right: 3px;
+  }
+
+  ul {
+      padding-top: 8px;
+      background-color: var(--color-3);
+      color: var(--color-4);
+  }
+
+  ul li {
+      text-align: center;
+      text-decoration: none;
+      padding-bottom: 8px;
+      font-size: 14px;
+  }
+
+  footer {
+      background-color: var(--color-2);
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+  }
+
+  footer p {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: var(--color-4);
+      font-size: 16px;
+      padding-bottom: 8px;
+  }
+  .fab {
+      color: var(--color-4);
+      padding: 8px;
+  }
+  .fa-facebook:hover{
+      color: var(--color-1);
+  }
+  .fa-twitter:hover{
+      color: var(--color-1);
+  }
+  .fa-github:hover{
+      color: var(--color-3);
+  }
+  a{
+      text-decoration: none;
+  }
+  #scrollToTop {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+
+  #scrollToTop:hover {
+      background-color: #555;
+  }
 }
